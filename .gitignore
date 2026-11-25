@@ -1,0 +1,44 @@
+# Gowin IDE build output (regenerable, ~30 MB)
+impl/
+*.gprj.user
+*.fs
+
+# Simulation output
+*.vcd
+*.fst
+*.lxt
+*.out
+a.out
+
+# Python
+__pycache__/
+*.pyc
+
+# Large raw captures (regenerate with tools/grab.py)
+captures/iq_session.txt
+captures/*.cu8
+captures/*.pcap
+
+# Encrypted vendor IP — not redistributable, see src/dvi/README.md
+fpga_ulpi_test/src/dvi/DVI_TX_Top.v
+
+# Editor / OS
+.DS_Store
+*.swp
+
+# Third-party prebuilt binaries — not ours to redistribute.
+# tools/bl702/README.md says where each came from and how to rebuild.
+tools/bl702/blisp_dist/
+tools/bl702/blisp.zip
+tools/bl702/usb2uartjtag_bl702_v1.1.1.bin
+tools/bl702/fpga_partner_20260626.bin
+tools/bl702/fpga_partner_bl702_20260630.bin
+tools/bl702/dbger_gowin.bin
+
+# Compiled iverilog output (no extension)
+fpga_ulpi_test/sim/tb_fpv_pipeline
+fpga_ulpi_test/sim/tb_usb_iq_fifo
+fpga_ulpi_test/sim/tb_sync_dpll
+fpga_ulpi_test/sim/tb_vout2
+fpga_ulpi_test/sim/tb_chk
+fpga_ulpi_test/sim/tb_chk2

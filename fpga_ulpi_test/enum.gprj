@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/async_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/usb_iq_depacketizer.v" type="file.verilog" enable="1"/>
+        <File path="src/usb_iq_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/cordic_atan2.v" type="file.verilog" enable="1"/>
+        <File path="src/fm_demod.v" type="file.verilog" enable="1"/>
+        <File path="src/ntsc_sync_separator.v" type="file.verilog" enable="1"/>
+        <File path="src/ntsc_sync_dpll.v" type="file.verilog" enable="1"/>
+        <File path="src/video_diag.v" type="file.verilog" enable="1"/>
+        <File path="src/video_line_buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/video_line_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/fpv_video_out.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi/DVI_TX_Top.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi/TMDS_rPLL.v" type="file.verilog" enable="1"/>
+        <File path="src/iq_dump.v" type="file.verilog" enable="1"/>
+        <File path="src/field_dump.v" type="file.verilog" enable="1"/>
+        <File path="src/fpv_auto_scanner.v" type="file.verilog" enable="1"/>
+        <File path="src/ulpi_enum_test.v" type="file.verilog" enable="1"/>
+        <File path="src/ulpi_enum.cst" type="file.cst" enable="1"/>
+        <File path="src/ulpi_enum.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
